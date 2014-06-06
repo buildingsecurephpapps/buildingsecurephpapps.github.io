@@ -1037,6 +1037,14 @@ footer .back-to-top i:hover {
   opacity: 1;
   filter: alpha(opacity=100);
 }
+
+
+
+  #top-cta-container {
+    text-align:center;
+    width:80%;
+  }
+
 /* #Media Queries
 ================================================== */
 /* Smaller than standard 960 (devices and browsers) */
@@ -1105,6 +1113,8 @@ footer .back-to-top i:hover {
   .purchase .price-table:last-child {
     margin-right: 0;
   }
+
+
 }
 /* @media only screen and (max-width: 959px) */
 /* Tablet Landscape & Desktops + Anything Larger */
@@ -1134,6 +1144,7 @@ footer .back-to-top i:hover {
     margin-right: 0;
   }
   /* /.nav */
+
 }
 /* @media only screen and (min-width: 768px) */
 /* Tablet Portrait size to standard 960 (devices and browsers) */
@@ -1250,6 +1261,11 @@ footer .back-to-top i:hover {
   .purchase .recommended {
     width: 100%;
     margin: 20px 0 !important;
+  }
+
+  #top-cta-container {
+    text-align:center;
+    width:100%;
   }
 
 }

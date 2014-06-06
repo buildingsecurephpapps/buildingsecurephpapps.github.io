@@ -1,3 +1,67 @@
+<?php
+
+	$leanpubApiKey = '1pP95lZcH40xgIMB1eGPcf';
+
+	date_default_timezone_set('America/Los_Angeles');
+
+	$url = 'https://leanpub.com/buildingsecurephpapps/packages/book/purchases/new';
+	$price = '24.99';
+
+	//determine URL
+	if (isset($_GET['coupon']) && !empty($_GET['coupon']))
+	{
+
+		$url = 'https://leanpub.com/buildingsecurephpapps/packages/book/purchases/c/' . htmlentities($_GET['coupon']);
+
+		//get price data for this coupon
+		$ch = curl_init('https://leanpub.com/buildingsecurephpapps/coupons.json?api_key=' . $leanpubApiKey);
+
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+		curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
+		curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+
+		$response = curl_exec($ch);
+
+
+		$coupons = array();
+
+		if (isset($response) && !empty($response)) {
+
+			$data = json_decode($response);
+
+			if (isset($data) && !empty($data))
+			{
+
+				foreach ($data as $row)
+				{
+
+					if (isset($row->package_discounts) && !empty($row->package_discounts))
+					{
+						foreach ($row->package_discounts as $package)
+						{
+
+							if ($package->package_slug == 'book')
+							{
+								$coupons[$row->coupon_code] = $package->discounted_price;
+							}
+
+						}
+					}
+
+				}
+
+			}
+
+		}
+
+		//update the price
+		if (isset($coupons[$_GET['coupon']]) && $coupons[$_GET['coupon']] > 0)
+		{
+			$price = $coupons[$_GET['coupon']];
+		}
+	}
+
+?>
 <!DOCTYPE html>
 <!--[if IE 8]>         <html class="lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html> <!--<![endif]-->
@@ -90,12 +154,22 @@
 					</p>
 				</div> <!-- /.subtitle -->
 
-				<a href="https://leanpub.com/buildingsecurephpapps/packages/book/purchases/new" class="button purchase-button" onClick="_gaq.push(['_trackEvent', 'Landing_Click', 'CTA_Purchase', 'Clicked Purchase to proceed to Leanpub Checkout']);">Purchase</a>
+
+
+				<div id="top-cta-container">
+
+					<a href="<?=$url?>" class="button purchase-button" onClick="_gaq.push(['_trackEvent', 'Landing_Click', 'CTA_Purchase', 'Clicked Purchase to proceed to Leanpub Checkout']);">Buy Now</a>
+
+					<p>Get It Now For Just $<?=$price?></p>
+					<p>45 Day Money Back Guarantee</p>
+
+				</div>
+
 			</div><!-- /.eight columns -->
 
 			<!-- Image -->
 			<div class="eight columns">
-				<img src="images/ebook-home.png" alt="Building Secure PHP Apps Ebook" style="width:80%; border:2px #666666 solid;" id="ebook-home">
+				<img src="images/ebook-home.png" alt="Building Secure PHP Apps Ebook" style="width:82%; border:2px #666666 solid;" id="ebook-home">
 			</div><!-- /.eight columns -->
 
 		</div> <!-- /.container -->
@@ -310,11 +384,11 @@
 		<div class="container">
 
 			<div id="cta-container">
-				<span class="cta-txt">Get It Now For Just $24.99</span>
+				<span class="cta-txt">Get It Now For Just $<?=$price?></span>
 				<br /><br />
 				<p>45 Day Money Back Guarantee</p>
 			</div>
-			<a href="https://leanpub.com/buildingsecurephpapps/packages/book/purchases/new" class="button purchase-button" onClick="_gaq.push(['_trackEvent', 'Landing_Click', 'CTA_Purchase_Now', 'Clicked Purchase Now to proceed to Leanpub Checkout']);">Purchase <span>Now</span></a>
+			<a href="<?=$url?>" class="button purchase-button" onClick="_gaq.push(['_trackEvent', 'Landing_Click', 'CTA_Purchase_Now', 'Clicked Purchase Now to proceed to Leanpub Checkout']);">Purchase <span>Now</span></a>
 			<br /><br />
 			<p>Secure checkout on Leanpub</p>
 
@@ -502,7 +576,7 @@
 					<p><strong>(Instance Access)</strong></p>
 
 					<div class="price">
-						<p><span>$</span>24.99</p>
+						<p><span>$</span><?=$price?></p>
 					</div>
 
 					<div class="price-table-description">
@@ -513,7 +587,7 @@
 						<p><strong>45 Day Money Back Guarantee!</strong></p>
 					</div> <!-- /.price-table-description -->
 
-					<a href="https://leanpub.com/buildingsecurephpapps/packages/book/purchases/new" class="button" onClick="_gaq.push(['_trackEvent', 'Landing_Click', 'CTA_Buy_Now', 'Clicked Buy Now to proceed to Leanpub Checkout']);">Buy Now</a>
+					<a href="<?=$url?>" class="button" onClick="_gaq.push(['_trackEvent', 'Landing_Click', 'CTA_Buy_Now', 'Clicked Buy Now to proceed to Leanpub Checkout']);">Buy Now</a>
 				</div> <!-- /.price-table -->
 
 			</div>
