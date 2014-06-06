@@ -52,14 +52,14 @@
 
 				<nav class="nav">
 					<!-- Mobile Menu Toggle -->
-					<a href="#" id="menu-toggle" class="menu-toggle">Menu <i class="fa fa-align-justify"></i></a>
+					<a href="#" id="menu-toggle" class="menu-toggle" onClick="_gaq.push(['_trackEvent', 'Landing_Click', 'Menu_Open', 'Clicked to open the Menu']);">Menu <i class="fa fa-align-justify"></i></a>
 
 					<ul id="menu" class="menu">
-						<li class="active"><a href="#">Home</a></li>
-						<li><a href="#overview">Overview</a></li>
-						<li><a href="#sample">Download Sample</a></li>
+						<li class="active"><a href="#" onClick="_gaq.push(['_trackEvent', 'Landing_Click', 'Menu_Home', 'Clicked Home in the Menu Bar']);">Home</a></li>
+						<li><a href="#overview" onClick="_gaq.push(['_trackEvent', 'Landing_Click', 'Menu_Overview', 'Clicked Overview in the Menu Bar']);">Overview</a></li>
+						<li><a href="#sample" onClick="_gaq.push(['_trackEvent', 'Landing_Click', 'Menu_Sample', 'Clicked Download Sample in the Menu Bar']);">Download Sample</a></li>
 						<!-- <li><a href="#testimonials">Testimonials</a></li> -->
-						<li><a href="#purchase">Purchase</a></li>
+						<li><a href="#purchase" onClick="_gaq.push(['_trackEvent', 'Landing_Click', 'Menu_Purchase', 'Clicked Purchase in the Menu Bar']);">Purchase</a></li>
 					</ul>
 				</nav>
 
@@ -90,7 +90,7 @@
 					</p>
 				</div> <!-- /.subtitle -->
 
-				<a href="https://leanpub.com/buildingsecurephpapps/packages/book/purchases/new" class="button purchase-button">Purchase</a>
+				<a href="https://leanpub.com/buildingsecurephpapps/packages/book/purchases/new" class="button purchase-button" onClick="_gaq.push(['_trackEvent', 'Landing_Click', 'CTA_Purchase', 'Clicked Purchase to proceed to Leanpub Checkout']);">Purchase</a>
 			</div><!-- /.eight columns -->
 
 			<!-- Image -->
@@ -294,7 +294,7 @@
  			</div>
 
 			<div id="sample" class="sixteen columns product-sample">
-				<a href="http://samples.leanpub.com/buildingsecurephpapps-sample.pdf" class="button dl-link">Download Sample</a>
+				<a href="http://samples.leanpub.com/buildingsecurephpapps-sample.pdf" class="button dl-link" onClick="_gaq.push(['_trackEvent', 'Landing_Click', 'Download_Sample', 'Clicked Download Sample']);">Download Sample</a>
 
 				<img src="images/product-sample.png" alt="Sample">
 			</div> <!-- /.product-sample -->
@@ -314,7 +314,7 @@
 				<br /><br />
 				<p>45 Day Money Back Guarantee</p>
 			</div>
-			<a href="https://leanpub.com/buildingsecurephpapps/packages/book/purchases/new" class="button purchase-button">Purchase <span>Now</span></a>
+			<a href="https://leanpub.com/buildingsecurephpapps/packages/book/purchases/new" class="button purchase-button" onClick="_gaq.push(['_trackEvent', 'Landing_Click', 'CTA_Purchase_Now', 'Clicked Purchase Now to proceed to Leanpub Checkout']);">Purchase <span>Now</span></a>
 			<br /><br />
 			<p>Secure checkout on Leanpub</p>
 
@@ -463,8 +463,8 @@
 					<div class="author-meta">
 						<span class="name">Ben Edmunds</span>
 						<div class="social">
-							<a href="http://www.twitter.com/benedmunds"><i class="fa fa-twitter"></i></a>
-							<a href="http://github.com/benedmunds"><i class="fa fa-github"></i></a>
+							<a href="http://www.twitter.com/benedmunds" target="_blank" onClick="_gaq.push(['_trackEvent', 'Landing_Click', 'Social_Twitter', 'Clicked Twitter link']);"><i class="fa fa-twitter"></i></a>
+							<a href="http://github.com/benedmunds" target="_blank" onClick="_gaq.push(['_trackEvent', 'Landing_Click', 'Social_Github', 'Clicked Github link']);"><i class="fa fa-github"></i></a>
 						</div> <!-- /.social -->
 					</div> <!-- /.author-meta -->
 
@@ -513,7 +513,7 @@
 						<p><strong>45 Day Money Back Guarantee!</strong></p>
 					</div> <!-- /.price-table-description -->
 
-					<a href="https://leanpub.com/buildingsecurephpapps/packages/book/purchases/new" class="button">Buy Now</a>
+					<a href="https://leanpub.com/buildingsecurephpapps/packages/book/purchases/new" class="button" onClick="_gaq.push(['_trackEvent', 'Landing_Click', 'CTA_Buy_Now', 'Clicked Buy Now to proceed to Leanpub Checkout']);">Buy Now</a>
 				</div> <!-- /.price-table -->
 
 			</div>
@@ -529,7 +529,7 @@
 			<h3 class="title"><span class="title-highlight">Discuss</span></h3>
 
 			<p class="description">
-				It would be great to hear your feedback.  <a href="https://leanpub.com/buildingsecurephpapps/feedback" target="_blank">Join the discussion</a>.
+				It would be great to hear your feedback.  <a href="https://leanpub.com/buildingsecurephpapps/feedback" target="_blank" onClick="_gaq.push(['_trackEvent', 'Landing_Click', 'Discuss', 'Clicked Join Coversation to proceed to Leanpub discussion']);">Join the discussion</a>.
 			</p>
 		</div> <!-- /.section-header -->
 
@@ -549,7 +549,7 @@
 
 		<div class="copyright">
 			<p>
-				&copy; 2014 <a href="http://benedmunds.com">Ben Edmunds</a>
+				&copy; 2014 <a href="http://benedmunds.com" onClick="_gaq.push(['_trackEvent', 'Landing_Click', 'Footer_Blog', 'Clicked link in footer to see the Blog']);">Ben Edmunds</a>
 			</p>
 		</div>
 
@@ -563,10 +563,27 @@
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
 <script src="js/vendor/jquery.placeholder.js"></script>
-<script src="js/vendor/jquery.flexslider-min.js"></script>
 <script src="js/vendor/jquery.validate.min.js"></script>
 <script src="js/vendor/waypoints.min.js"></script>
+<script src="js/vendor/jquery.flexslider-min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/animations.js"></script>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-46501008-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
 </body>
 </html>
