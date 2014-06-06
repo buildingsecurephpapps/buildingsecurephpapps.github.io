@@ -573,7 +573,7 @@
 
 				<div class="price-table recommended">
 					<h4 class="price-table-title">Ebook</h4>
-					<p><strong>(Instance Access)</strong></p>
+					<p><strong>(Instant Access)</strong></p>
 
 					<div class="price">
 						<p><span>$</span><?=$price?></p>
