@@ -122,7 +122,7 @@
 						<li class="active"><a href="#" onClick="_gaq.push(['_trackEvent', 'Landing_Click', 'Menu_Home', 'Clicked Home in the Menu Bar']);">Home</a></li>
 						<li><a href="#overview" onClick="_gaq.push(['_trackEvent', 'Landing_Click', 'Menu_Overview', 'Clicked Overview in the Menu Bar']);">Overview</a></li>
 						<li><a href="#sample" onClick="_gaq.push(['_trackEvent', 'Landing_Click', 'Menu_Sample', 'Clicked Download Sample in the Menu Bar']);">Download Sample</a></li>
-						<!-- <li><a href="#testimonials">Testimonials</a></li> -->
+						<li><a href="#testimonials">Testimonials</a></li>
 						<li><a href="#purchase" onClick="_gaq.push(['_trackEvent', 'Landing_Click', 'Menu_Purchase', 'Clicked Purchase in the Menu Bar']);">Purchase</a></li>
 					</ul>
 				</nav>
@@ -364,7 +364,7 @@
 
 			<div class="sixteen columns" style="text-align:center; margin:0 auto; width:100%;">
 				<br /><br />
-				<h3 class="title">45 day <span class="title-highlight">Money Back Guarantee</span></h3>
+				<h3 class="title">45 day Money Back <span class="title-highlight">Guarantee</span></h3>
  			</div>
 
 			<div id="sample" class="sixteen columns product-sample">
@@ -398,35 +398,35 @@
 
 
 
-	<section id="testimonials" class="testimonials boxed" style="display:none;">
+	<section id="testimonials" class="testimonials boxed">
 
 		<div class="section-header">
 			<h3 class="title">The <span class="title-highlight">Testimonials</span></h3>
 
 			<p class="description">
-				Many people have used the techniques used in this eBook to improve their quality of life. Lorem ipsum dolor sit amet, has persius detraxit ea. Eu duis complectitur mei,
+				These people think you should buy this ebook.
 			</p>
 		</div> <!-- /.section-header -->
 
 		<div class="testimonial">
 			<div class="container">
 				<div class="three columns">
-					<img src="images/testimonial-avatar-1.png" alt="Lidia Coffelt">
+					<img src="images/tony-dew.jpg" alt="Tony Dew">
 				</div>
 
 				<div class="thirteen columns">
 					<div class="profile">
-						<span class="name">Lidia Coffelt</span>
+						<span class="name">Tony Dew</span>
 
 						<div class="ratings">
 							<i class="fa fa-star"></i>
 							<i class="fa fa-star"></i>
 							<i class="fa fa-star"></i>
 							<i class="fa fa-star"></i>
-							<i class="fa fa-star-half-empty"></i>
+							<i class="fa fa-star"></i>
 						</div> <!-- /.ratings -->
 
-						<p><strong>Just awesome.</strong> Ut suscipit purus malesuada in. Nam sed magna at quam varius eleifend id quis quam. Maecenas ut purus elementum metus malesuada ultrices quis ut sapien. Nullam vitae eros diam.</p>
+						<p>Great balance of what you need to know, why you need to know it, and how to do it. <strong>This book is worth every penny</strong>.</p>
 					</div> <!-- /.profile -->
 				</div>
 			</div> <!-- /.container -->
@@ -437,7 +437,7 @@
 
 				<div class="thirteen columns">
 					<div class="profile">
-						<span class="name">Glen Ishikawa</span>
+						<span class="name">Jeff Carouth</span>
 
 						<div class="ratings">
 							<i class="fa fa-star"></i>
@@ -447,12 +447,12 @@
 							<i class="fa fa-star"></i>
 						</div> <!-- /.ratings -->
 
-						<p><strong>Amazing!</strong> Lorem suscipit purus malesuada in. Nam sed magna at quam varius eleifend id quis quam. Maecenas ut purus elementum metus malesuada ultrices quis ut sapien. Nullam vitae eros diam.</p>
+						<p><strong>10/5</strong> would read again!</p>
 					</div> <!-- /.profile -->
 				</div>
 
 				<div class="three columns">
-					<img src="images/testimonial-avatar-2.png" alt="Lidia Coffelt">
+					<img src="images/jeff-carouth.jpeg" alt="Jeff Carouth">
 				</div>
 
 			</div> <!-- /.container -->
@@ -461,53 +461,29 @@
 		<div class="testimonial">
 			<div class="container">
 				<div class="three columns">
-					<img src="images/testimonial-avatar-3.png" alt="Lidia Coffelt">
+					<img src="images/maks-surguy.jpeg" alt="Maks Surguy">
 				</div>
 
 				<div class="thirteen columns">
 					<div class="profile">
-						<span class="name">Marvis Griese</span>
+						<span class="name">Maks Surguy</span>
 
 						<div class="ratings">
 							<i class="fa fa-star"></i>
 							<i class="fa fa-star"></i>
 							<i class="fa fa-star"></i>
 							<i class="fa fa-star"></i>
-							<i class="fa fa-star-o"></i>
+							<i class="fa fa-star"></i>
 						</div> <!-- /.ratings -->
 
-						<p><strong>Great eBook.</strong> Sed sagittis velit velit, ut suscipit purus malesuada in. Nam sed magna at quam varius eleifend id quis quam. Maecenas ut purus elementum metus malesuada ultrices quis ut sapien. Nullam vitae eros diam.</p>
+						<p>This book gave me quite a few <strong>new insights</strong> and made me aware of potential weaknesses in my own applications.</p>
 					</div> <!-- /.profile -->
 				</div>
 
 			</div> <!-- /.container -->
 		</div> <!-- /.testimonial -->
 
-		<div class="testimonial">
-			<div class="container">
 
-				<div class="thirteen columns">
-					<div class="profile">
-						<span class="name">Arthur Durling</span>
-
-						<div class="ratings">
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star-half-empty"></i>
-						</div> <!-- /.ratings -->
-
-						<p><strong>Worth every cent.</strong> Suscipit purus malesuada in. Nam sed magna at quam varius eleifend id quis quam. Maecenas ut purus elementum metus malesuada ultrices quis ut sapien. Nullam vitae eros diam</p>
-					</div> <!-- /.profile -->
-				</div>
-
-				<div class="three columns">
-					<img src="images/testimonial-avatar-4.png" alt="Lidia Coffelt">
-				</div>
-
-			</div> <!-- /.container -->
-		</div> <!-- /.testimonial -->
 
 	</section> <!-- #testimonials -->
 
@@ -522,7 +498,7 @@
 
 			<p class="description">
 				Ben Edmunds leads development teams to create cutting-edge web and mobile applications. He is an active leader, developer, and speaker in various development communities, especially the CodeIgniter and Laravel PHP framework communities. He has been developing software professionally for over 10 years and in that time has worked on everything from robotics to government projects.
-
+				<br /><br />
 				PHP Town Hall podcast co-host.  Open source advocate.  Nice guy.
 			</p>
 		</div> <!-- /.section-header -->
@@ -543,10 +519,6 @@
 					</div> <!-- /.author-meta -->
 
 					<div class="clearfix"></div>
-
-					<div class="author-description">
-						When not moving every 3 months, Ben can be found organizing industry meetups and keeping classy pubs in business.
-					</div> <!-- /.author-description -->
 				</div> <!-- /.author-info -->
 			</div> <!-- /.sixteen columns -->
 		</div> <!-- /.container -->

@@ -826,7 +826,7 @@ img {
   background: #ffffff;
 }
 .testimonials .testimonial {
-  background: #f9f9f9;
+  background: #ffffff;
   padding: 20px 0;
 }
 .testimonials .testimonial img {
@@ -852,7 +852,7 @@ img {
   margin-top: 10px;
 }
 .testimonials .testimonial:nth-child(2n+1) {
-  background: #ffffff;
+  background: #f9f9f9;
 }
 .testimonials .testimonial:nth-child(2n+1) .profile {
   text-align: right;
@@ -1039,6 +1039,11 @@ footer .back-to-top i:hover {
 }
 
 
+  .author .author-info {
+    width: 60%;
+    padding-left:12%;
+    margin: 0 auto;
+  }
 
   #top-cta-container {
     text-align:center;
@@ -1266,6 +1271,12 @@ footer .back-to-top i:hover {
   #top-cta-container {
     text-align:center;
     width:100%;
+  }
+
+  .author .author-info {
+    width: 80%;
+    padding-left:0;
+    margin: 0 auto;
   }
 
 }
