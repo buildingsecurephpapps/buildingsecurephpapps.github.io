@@ -225,7 +225,7 @@
 			<h3 class="title">What You'll <span class="title-highlight">Learn</span></h3>
 
 			<p class="description">
-				Several years ago I was writing a web application for a client in the CodeIgniter PHP framework, *shudder*, but CodeIgniter didn't include any type of authentication system built in.  I of course did what any good/lazy developer would do and went on the hunt for a well made library to supply authentication capabilities.  To my chagrin I discovered that there weren't any clean, concise libraries that fit my needs for authentication in CodeIgniter.  Thus began my journey of creating Ion Auth, a simple authentication library for CodeIgniter, and a career long crusade for securing web applications as well as helping other developers do the same.
+				Several years ago I was writing a web application for a client in the CodeIgniter PHP framework, but CodeIgniter didn't include any type of authentication system built in.  I of course did what any good/lazy developer would do and went on the hunt for a well made library to supply authentication capabilities.  To my chagrin I discovered that there weren't any clean, concise libraries that fit my needs for authentication in CodeIgniter.  Thus began my journey of creating Ion Auth, a simple authentication library for CodeIgniter, and a career long crusade for securing web applications as well as helping other developers do the same.
 			</p>
 
 			<p class="description">
