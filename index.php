@@ -4,11 +4,11 @@
 
 	date_default_timezone_set('America/Los_Angeles');
 
-	$url = 'https://leanpub.com/buildingsecurephpapps/packages/book/purchases/new';
-	$price = '24.99';
+	$url = 'http://www.apress.com/us/book/9781484221198';
+	$price = '9.99';
 
 	//determine URL
-	if (isset($_GET['coupon']) && !empty($_GET['coupon']))
+	if (FALSE && isset($_GET['coupon']) && !empty($_GET['coupon']))
 	{
 
 		$url = 'https://leanpub.com/buildingsecurephpapps/packages/book/purchases/c/' . htmlentities($_GET['coupon']);
@@ -158,10 +158,9 @@
 
 				<div id="top-cta-container">
 
-					<a href="<?=$url?>" class="button purchase-button" onClick="_gaq.push(['_trackEvent', 'Landing_Click', 'CTA_Purchase', 'Clicked Purchase to proceed to Leanpub Checkout']);">Buy Now</a>
+					<a href="<?=$url?>" class="button purchase-button" onClick="_gaq.push(['_trackEvent', 'Landing_Click', 'CTA_Purchase', 'Clicked Purchase to proceed to Leanpub Checkout']);">Buy Now from Apress</a>
 
 					<p>Get It Now For Just $<?=$price?></p>
-					<p>45 Day Money Back Guarantee</p>
 
 				</div>
 
@@ -367,7 +366,7 @@
 				<h3 class="title">45 day Money Back <span class="title-highlight">Guarantee</span></h3>
  			</div>
 
-			<div id="sample" class="sixteen columns product-sample">
+			<div id="sample" class="sixteen columns product-sample" style="display:none;">
 				<a href="http://samples.leanpub.com/buildingsecurephpapps-sample.pdf" class="button dl-link" onClick="_gaq.push(['_trackEvent', 'Landing_Click', 'Download_Sample', 'Clicked Download Sample']);">Download Sample</a>
 
 				<img src="images/product-sample.png" alt="Sample">
@@ -386,11 +385,10 @@
 			<div id="cta-container">
 				<span class="cta-txt">Get It Now For Just $<?=$price?></span>
 				<br /><br />
-				<p>45 Day Money Back Guarantee</p>
 			</div>
-			<a href="<?=$url?>" class="button purchase-button" onClick="_gaq.push(['_trackEvent', 'Landing_Click', 'CTA_Purchase_Now', 'Clicked Purchase Now to proceed to Leanpub Checkout']);">Purchase <span>Now</span></a>
+			<a href="<?=$url?>" class="button purchase-button" onClick="_gaq.push(['_trackEvent', 'Landing_Click', 'CTA_Purchase_Now', 'Clicked Purchase Now to proceed to Apress']);">Purchase <span>Now</span></a>
 			<br /><br />
-			<p>Secure checkout on Leanpub</p>
+			<p>Secure checkout on Apress</p>
 
 		</div> <!-- /.container -->
 	</section> <!-- #cta -->
@@ -541,7 +539,7 @@
 
 
 		<div class="container">
-			<div class="sixteen columns">
+			<div class="eight columns">
 
 				<div class="price-table recommended">
 					<h4 class="price-table-title">Ebook</h4>
@@ -554,12 +552,33 @@
 					<div class="price-table-description">
 						<p><strong>PDF</strong><br />(for Mac or PC)</p>
 						<p><strong>EPUB</strong><br />(for iPad / iPhone / Android / ebook readers)</p>
-						<p><strong>MOBI</strong><br />(for Kindle)</p>
+						<p><strong>Digitally watermarked, DRM-free</strong></p>
 						<p><br /></p>
-						<p><strong>45 Day Money Back Guarantee!</strong></p>
+						<p><strong>ISBN 978-1-4842-2119-8</strong></p>
 					</div> <!-- /.price-table-description -->
 
-					<a href="<?=$url?>" class="button" onClick="_gaq.push(['_trackEvent', 'Landing_Click', 'CTA_Buy_Now', 'Clicked Buy Now to proceed to Leanpub Checkout']);">Buy Now</a>
+					<a href="<?=$url?>" class="button" onClick="_gaq.push(['_trackEvent', 'Landing_Click', 'CTA_Buy_Now', 'Clicked Buy Now to proceed to Apress']);">Buy Now</a>
+				</div> <!-- /.price-table -->
+
+			</div>
+			<div class="eight columns">
+
+				<div class="price-table recommended">
+					<h4 class="price-table-title">Softcover</h4>
+					<p><strong>&nbsp;</strong></p>
+
+					<div class="price">
+						<p><span>$</span>14.99</p>
+					</div>
+
+					<div class="price-table-description">
+						<p><strong>Free shipping for individuals worldwide</strong></p>
+						<p><strong>Usually dispatched within 3 to 5 business days.</strong></p>
+						<p><br /></p>
+						<p><strong>ISBN 978-1-4842-2119-8</strong></p>
+					</div> <!-- /.price-table-description -->
+
+					<a href="<?=$url?>" class="button" onClick="_gaq.push(['_trackEvent', 'Landing_Click', 'CTA_Buy_Now', 'Clicked Buy Now to proceed to Apress']);">Buy Now</a>
 				</div> <!-- /.price-table -->
 
 			</div>
@@ -569,7 +588,7 @@
 
 
 
-	<section id="contact" class="contact boxed">
+	<section id="contact" class="contact boxed" style="display:none;">
 
 		<div class="section-header">
 			<h3 class="title"><span class="title-highlight">Discuss</span></h3>
